@@ -23,7 +23,10 @@ public class sampleController {
 	private sampleRepository samplerepository;
 	
 	@GetMapping("/getallsamples")
-	public List<sampleEntity> getAll(){
+	public List<sampleEntity> getAll(){		System.out.println("hello");
+		System.out.println("hello 1");
+		System.out.println("hello 2");
+		System.out.println("hello 3");
 		return samplerepository.findAll();
 	}
 	
