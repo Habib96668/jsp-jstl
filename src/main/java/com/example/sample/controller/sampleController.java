@@ -30,6 +30,7 @@ public class sampleController {
 		System.out.println("hello 3");
 		System.out.println("new sample");
 		System.out.println("habib");
+		System.out.println("habib 1");
 		return samplerepository.findAll();
 	}
 	
