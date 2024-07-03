@@ -29,6 +29,7 @@ public class sampleController {
 		System.out.println("hello 3");
 		System.out.println("sample");
 		System.out.println("sample 1");
+		System.out.println("new sample");
 		return samplerepository.findAll();
 	}
 	
