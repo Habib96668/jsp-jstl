@@ -36,6 +36,7 @@ public class sampleController {
 		System.out.println("habib 4");
 		System.out.println("habib 5");
 		System.out.println("habib 7");
+		System.out.println("habib 10");
 		return samplerepository.findAll();
 	}
 	
