@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -41,6 +42,13 @@ public class sampleController {
 	@GetMapping("/index")
 	public String index1(ModelMap map){
 		map.put("map", samplerepository.findAll());
+//		map.put("map","hello");
+		return "index";
+	}
+	
+	@GetMapping("/index1/{id}")
+	public String index2(@PathVariable("id") Integer id, ModelMap map){
+		map.put("map", samplerepository.findById(id));
 //		map.put("map","hello");
 		return "index";
 	}
